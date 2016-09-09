@@ -17,14 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+  //设置window
   self.window = [[UIWindow alloc]
       initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,
                                [UIScreen mainScreen].bounds.size.height)];
 
   DQCollectionViewController *DQcollectionVC =
       [[DQCollectionViewController alloc] init];
-
+  //实例化自定义的导航控制器和tabbar控制器
   UINavigationController *navigationVC = [[UINavigationController alloc]
       initWithRootViewController:DQcollectionVC];
 
